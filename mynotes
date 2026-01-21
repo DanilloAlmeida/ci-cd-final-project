@@ -1,0 +1,7 @@
+Comando para criação do ambiente:
+/* -------------------------------------------------------------------- */
+git clone https://github.com/{your_github_account}/ci-cd-final-project.git
+cd ci-cd-final-project
+bash ./bin/setup.sh
+exit
+/* -------------------------------------------------------------------- */
