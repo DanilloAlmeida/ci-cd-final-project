@@ -1,7 +1,17 @@
 Comando para criação do ambiente:
-/* -------------------------------------------------------------------- */
-git clone https://github.com/{your_github_account}/ci-cd-final-project.git
-cd ci-cd-final-project
-bash ./bin/setup.sh
-exit
-/* -------------------------------------------------------------------- */
+    git clone https://github.com/DanilloAlmeida/ci-cd-final-project.git
+    cd ci-cd-final-project
+    bash ./bin/setup.sh
+    exit
+
+Exibe o github account configurado no ambiente:
+    echo $env:GITHUB_ACCOUNT
+
+Seta o github account configurado no ambiente:
+    $env:GITHUB_ACCOUNT = "DanilloAlmeida"
+
+you can shorten the prompt using the following command:
+NO BASH
+    export PS1="[\[\033[01;32m\]\u\[\033[00m\]: \[\033[01;34m\]\W\[\033[00m\]]\$ "
+NO POWERSHELL
+    function prompt {"PS $($PWD.Path.Split('\')[-1])> "}
