@@ -5,10 +5,11 @@ Comando para criação do ambiente:
     exit
 
 Exibe o github account configurado no ambiente:
-    echo $env:GITHUB_ACCOUNT
+    echo $GITHUB_ACCOUNT
 
 Seta o github account configurado no ambiente:
-    $env:GITHUB_ACCOUNT = "DanilloAlmeida"
+
+    export GITHUB_ACCOUNT="DanilloAlmeida"
 
 you can shorten the prompt using the following command:
 NO BASH
