@@ -1,0 +1,38 @@
+[danil: ci-cd-final-project]$ gh run list
+STATUS  TITLE                WORKFLOW     BRANCH  EVENT  ID           ELAPSED  AGE                 
+✓       add workflow         CI workflow  main    push   21233836150  19s      about 24 minutes ago
+X       att readme           CI workflow  main    push   21233660688  0s       about 33 minutes ago
+X       ajustando comandos   CI workflow  main    push   21233306481  0s       about 50 minutes ago
+X       atualizando mynotes  CI workflow  main    push   21206957719  0s       about 15 hours ago
+X       adicionando mynotes  CI workflow  main    push   21205927680  0s       about 16 hours ago
+X       Initial commit       CI workflow  main    push   21205611970  0s       about 16 hours ago
+[danil: ci-cd-final-project]$ gh run view 21233836150
+  
+✓ main CI workflow · 21233836150
+Triggered via push about 24 minutes ago
+
+JOBS
+✓ build in 14s (ID 61097465986)
+
+For more information about the job, try: gh run view --job=61097465986
+View this run on GitHub: https://github.com/DanilloAlmeida/ci-cd-final-project/actions/runs/21233836150
+[danil: ci-cd-final-project]$ gh run view 21233836150 --verbose
+  
+✓ main CI workflow · 21233836150
+Triggered via push about 24 minutes ago
+
+JOBS
+✓ build in 14s (ID 61097465986)
+  ✓ Set up job
+  ✓ Checkout
+  ✓ Setup Node.js
+  ✓ Install dependencies
+  ✓ Lint with ESLint
+  ✓ Run unit tests with Jest
+  ✓ Post Setup Node.js
+  ✓ Post Checkout
+  ✓ Complete job
+
+For more information about the job, try: gh run view --job=61097465986
+View this run on GitHub: https://github.com/DanilloAlmeida/ci-cd-final-project/actions/runs/21233836150
+[danil: ci-cd-final-project]$ 

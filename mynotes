@@ -19,3 +19,7 @@ NO POWERSHELL
 
 git config --global user.email "danillodca@gmail.com"    
 git config --global user.name "danillo"    
+
+gh run list
+gh run view 21233836150
+gh run view 21233836150 --verbose
