@@ -16,3 +16,6 @@ NO BASH
     export PS1="[\[\033[01;32m\]\u\[\033[00m\]: \[\033[01;34m\]\W\[\033[00m\]]\$ "
 NO POWERSHELL
     function prompt {"PS $($PWD.Path.Split('\')[-1])> "}
+
+git config --global user.email "danillodca@gmail.com"    
+git config --global user.name "danillo"    
